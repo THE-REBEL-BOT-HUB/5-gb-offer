@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>বিজয় দিবস উপলক্ষে eGB প্ররি আন্তর্জাতিক</title>
+    <title>বিজয় দিবস উপলক্ষে ৫GB ফ্রি ইন্টারনেট</title>
+
     <style>
         body {
             background: linear-gradient(to right, #006a4e, #f42a41);
@@ -15,6 +16,30 @@
             margin: 0;
             overflow: hidden;
         }
+
+        #confetti {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .flag-wave {
+            position: fixed;
+            top: 15px;
+            width: 100%;
+            text-align: center;
+            font-size: 42px;
+            animation: wave 2s infinite ease-in-out;
+            z-index: 2;
+        }
+
+        @keyframes wave {
+            0% { transform: rotate(0deg); }
+            50% { transform: rotate(6deg); }
+            100% { transform: rotate(0deg); }
+        }
+
         .container {
             background: #ffffff;
             padding: 22px;
@@ -26,7 +51,37 @@
             position: relative;
             z-index: 3;
         }
-        input, select {
+
+        h1 {
+            font-size: 24px;
+            color: #006a4e;
+            margin-bottom: 8px;
+        }
+
+        .sub-title {
+            color: #d32f2f;
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+
+        .notice {
+            background: #e8f5e9;
+            padding: 12px;
+            border: 1px solid #43a047;
+            border-radius: 6px;
+            margin-bottom: 18px;
+            font-size: 14px;
+            color: #1b5e20;
+        }
+
+        .form-box {
+            border: 1px dashed #ccc;
+            padding: 18px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        select, input {
             width: 100%;
             padding: 10px;
             margin-bottom: 12px;
@@ -34,6 +89,7 @@
             border-radius: 6px;
             font-size: 14px;
         }
+
         .submit-button {
             background: #006a4e;
             color: #fff;
@@ -43,6 +99,33 @@
             width: 100%;
             font-size: 16px;
             cursor: pointer;
+        }
+
+        .user-count {
+            font-size: 14px;
+            color: #333;
+            margin-top: 8px;
+        }
+
+        .disclaimer {
+            font-size: 12px;
+            color: #666;
+            margin-top: 15px;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+            color: #ffffffcc;
+            z-index: 3;
+        }
+
+        footer span {
+            color: #a5ffdc;
+            font-weight: bold;
         }
     </style>
 </head>
