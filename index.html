@@ -1,106 +1,74 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="bn">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Free 1 GB Data Booster</title>
+    <title>বিজয় দিবস উপলক্ষে eGB প্ররি আন্তর্জাতিক</title>
     <style>
         body {
-            background: linear-gradient(to right, #00c6ff, #0072ff);
+            background: linear-gradient(to right, #006a4e, #f42a41);
             font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
+            overflow: hidden;
         }
-
         .container {
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: #ffffff;
+            padding: 22px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
             text-align: center;
             width: 100%;
-            max-width: 400px;
+            max-width: 420px;
+            position: relative;
+            z-index: 3;
         }
-
-        h1 {
-            font-size: 24px;
-            color: #333;
-            margin-bottom: 20px;
-        }
-
-        .notice {
-            background: #ffecb3;
+        input, select {
+            width: 100%;
             padding: 10px;
-            border: 1px solid #ffeb3b;
-            border-radius: 5px;
-            margin-bottom: 20px;
+            margin-bottom: 12px;
+            border: 1px solid #bbb;
+            border-radius: 6px;
             font-size: 14px;
         }
-
-        .form-box {
-            border: 1px solid #ddd;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-
-        select, input[type="text"] {
-            width: calc(100% - 20px);
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box;
-        }
-
         .submit-button {
-            background: #00c853;
+            background: #006a4e;
             color: #fff;
             border: none;
-            padding: 10px;
-            border-radius: 5px;
+            padding: 12px;
+            border-radius: 6px;
             width: 100%;
+            font-size: 16px;
             cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        .submit-button:hover {
-            background: #00b04f;
-        }
-
-        .user-count {
-            font-size: 14px;
-            color: #333;
-        }
-
-        video {
-            display: none;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>🚀 Free 1 GB Network Data</h1>
-        <div class="notice">�&nbsp; Free 1GB data pack recharge for everyone from us.</div>
-        <div class="form-box">
-            <form id="data-form">
-                <select id="operator" required="">
-                    <option value="">Select Operator</option>
-                    <option value="Jio">Jio</option>
-                    <option value="Airtel">Airtel</option>
-                    <option value="VI">VI</option>
-                    <option value="BSNL">BSNL</option>
-                </select>
-                <input type="text" id="mobile-number" placeholder="Mobile Number" required="" maxlength="10" pattern="\d{10}" title="Enter 10 digit mobile number">
-                <button type="submit" class="submit-button">🎁 Claim</button>
-            </form>
-        </div>
-        <div class="user-count">😃 Claimed 3589/5000 users.</div>
-        <video id="video" autoplay=""></video>
-        <canvas id="canvas" style="display:none;"></canvas>
+<div class="container">
+    <h1>🏳️‍🌈 বিজয় দিবস উপলক্ষে</h1>
+    <div class="form-box">
+        <form id="data-form">
+            <select required id="operator">
+                <option value="">মোবাইল অপারেটর নির্বাচন করুন</option>
+                <option>Grameenphone</option>
+                <option>Robi</option>
+                <option>Airtel</option>
+                <option>Banglalink</option>
+                <option>Teletalk</option>
+            </select>
+            <input type="text"
+                   id="mobile-number"
+                   placeholder="মোবাইল নম্বর (01XXXXXXXXX)"
+                   maxlength="11"
+                   pattern="01[0-9]{9}"
+                   required>
+            <button type="submit" class="submit-button">🎉 eGB ডাটা করার জন্য</button>
+        </form>
     </div>
-    <script src="script.js"></script>
-
-
-</body></html>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
